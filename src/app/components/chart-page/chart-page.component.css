@@ -1,0 +1,76 @@
+h1{
+    position: absolute;
+width: 156px;
+height: 28px;
+left: 113px;
+top: 122.24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 33px;
+line-height: 28px;
+/* identical to box height, or 85% */
+
+display: flex;
+align-items: center;
+
+color: #000000;
+
+}
+form {
+    position: absolute;
+    width: 400px;
+    height: 33px;
+    left: 122px;
+    top: 244.96px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000000;
+}
+.input1 {
+    box-sizing: border-box;
+    width: 502px;
+    height: 55px;
+    left: 113px;
+    top: 426.07px;
+    border: 1px solid #A6A6A6;
+    border-radius: 12px;
+}
+.btn1{
+    position: absolute;
+width: 182.22px;
+height: 55px;
+left: 432.78px;
+top: 430.72px;
+
+background: #000000;
+border-radius: 12px;
+}
+.vertical-line{
+    position: absolute;
+   
+width: 488.03px;
+height: 1px;
+left: 590.75px;
+top: 490.69px;
+
+border: 1px solid rgba(166, 166, 166, 0.5);
+transform: rotate(90deg);
+}
+.chart{
+    box-sizing: border-box;
+
+position: absolute;
+width: 576.68px;
+height: 276.68px;
+left: 1020.39px;
+top: 299.93px;
+
+
+
+}

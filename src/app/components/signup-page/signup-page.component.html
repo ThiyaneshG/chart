@@ -1,0 +1,48 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="col-md logo">
+                <img src="./assets/logo.png" alt="logo">
+            </div>
+            <div class="col">
+                <h1><b>Create Your Account</b></h1>
+                <h3>Lets get started with free trail for 30 days</h3>
+
+                <form [formGroup]="signUpForm" >
+                    <div class="mb-3">
+                        <label class="form-label ">Name <span>*</span></label>
+                        <input type="text" class="form-control input1" placeholder="Enter your Name"
+                        formControlName="Name" #get>
+                    </div> <br>
+                 <div formArrayName="input">
+                    <label  class="form-label">Email <span>*</span></label>
+                    <div class="mb-3" *ngFor="let input of inputControls.controls; let i = index" >
+                       
+                        <input type="email" class="form-control input1" placeholder="Enter your e-mail"
+                        formControlName="Email" #get1>
+                            <button class="btn btn2" (click)="addInput()"><i class="bi bi-plus-circle"></i></button>
+                    </div> <br>
+                    </div>
+                    <div class="mb-3">
+                        <label  class="form-label">Password <span>*</span></label>
+               `         <input type="password" class="form-control input1" placeholder="Enter your password"
+                           formControlName="password" >
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1" >Remember me</label>
+                    </div> <br>
+                    <button type="submit" class="btn btn-dark btn1" (ngSubmit)="onSubmit()">Submit</button>
+                </form>
+            </div>
+            <div class="statistics_page">
+                <a routerLink="/chart">
+                    <div class="icon">View Statistics <i class="bi bi-eye-fill"></i> </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <img class="img1" src="./assets/pic.png" alt="logo">
+        </div>
+    </div> 

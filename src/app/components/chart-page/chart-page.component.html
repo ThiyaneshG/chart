@@ -1,0 +1,40 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>Statistics</h1>
+            <form [formGroup]="pieChartForm"(ngSubmit)="createChart()">
+                <div class="mb-3">
+                    <label class="form-label ">Chairs </label>
+                    <input type="number" min="0" class="form-control input1" placeholder="Enter Number of Chairs"
+                         aria-describedby="emailHelp" formControlName="Chairs">
+                    
+                </div> <br>
+
+                <div class="mb-3">
+                    <label class="form-label">Table </label>
+                    <input type="number" min="0" class="form-control input1" placeholder="Enter Number of Tables"
+                          aria-describedby="emailHelp" formControlName="Table">
+                   
+                </div> <br>
+                <div class="mb-3">
+                    <label class="form-label">Lamp</label>
+                    <input type="number" min="0" class="form-control input1" placeholder="Enter Number of Lamp"
+                       formControlName="Lamp">
+                    <p></p>
+            </div>
+                <br>
+                <button type="submit" class="btn btn-dark btn1">SUBMIT</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <div class="vertical-line">
+            </div>
+
+            <div class="chart-container chart">
+                <canvas id="MyChart"></canvas>
+            </div>
+
+
+        </div>
+    </div>
+</div>

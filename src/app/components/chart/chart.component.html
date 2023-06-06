@@ -1,0 +1,9 @@
+<form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+  <div formArrayName="inputs">
+    <div *ngFor="let input of inputControls.controls; let i = index" class="mb-3">
+      <input [formControlName]="i" type="text">
+    </div>
+  </div>
+  <button type="button" (click)="addInput()">Add Input</button>
+  <button type="submit">Submit</button>
+</form>
